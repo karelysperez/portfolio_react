@@ -1,0 +1,50 @@
+header {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin: 20px 20px 1px 20px;
+    padding-block: 30px;
+    padding-inline: 30px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+#menuBtn {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: default;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+
+#menuBtn img {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+
+/* === Header: Breakpoints === */
+@media (max-width: 767px) {
+    nav { display: none; }
+    #menuBtn { display: inline-flex; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    nav { display: block; }
+    #menuBtn { display: none; }
+}
