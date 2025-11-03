@@ -38,7 +38,6 @@ nav ul {
     display: block;
 }
 
-/* === Header: Breakpoints === */
 @media (max-width: 767px) {
     nav { display: none; }
     #menuBtn { display: inline-flex; }

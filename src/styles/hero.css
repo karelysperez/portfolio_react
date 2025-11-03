@@ -46,7 +46,6 @@
     inline-size: fit-content;
 }
 
-/* === Hero: Breakpoints === */
 @media (max-width: 767px) {
     .content {
         flex-direction: column;
