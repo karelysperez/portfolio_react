@@ -1,10 +1,12 @@
-import '../styles/header.css'
+import './header.css'
+import { NavLink } from "react-router-dom";
+
 export default function Header() {
     return (
         <header>
             <div className="profile">
-                <section className="profile-icon">MG</section>
-                <h1 className="name">Martina Gonzales</h1>
+                <div className="profile-icon">MG</div>
+                <p className="name">Martina Gonzales</p>
             </div>
 
             <button id="menuBtn" aria-label="Menu Button" type="button">
@@ -13,10 +15,10 @@ export default function Header() {
 
             <nav>
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./Projects.html">Projects</a></li>
+                    <li><NavLink to="/" end>Home</NavLink></li>
+                    <li><NavLink to="/projects">Projects</NavLink></li>
                 </ul>
             </nav>
         </header>
-    )
+    );
 }

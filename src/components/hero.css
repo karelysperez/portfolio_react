@@ -16,9 +16,6 @@
 }
 
 .textContent {
-    text-align: center;
-    margin-left: 0;
-    max-width: 65ch;
     padding: 12px;
 }
 
@@ -54,6 +51,7 @@
 
     .textContent {
         margin-left: 24px;
+        margin-right: 24px;
     }
 }
 
@@ -65,10 +63,15 @@
 
     .textContent {
         margin-left: 24px;
+        margin-right: 24px;
     }
 }
 
 @media (min-width: 1024px) {
-    .textContent { margin-left: 50px; }
+    .textContent {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
     .buttons { align-items: flex-start; }
 }

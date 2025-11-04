@@ -1,10 +1,10 @@
-import '../styles/footer.css'
+import './footer.css'
 export default function Footer() {
     return (
         <footer>
             <div className="profile">
-                <section className="profile-icon">MG</section>
-                <h1 className="name">Martina Gonzales</h1>
+                <div className="profile-icon">MG</div>
+                <p className="name">Martina Gonzales</p>
             </div>
 
             <h2>Do you have a project in mind?</h2>

@@ -1,8 +1,10 @@
-import '../styles/hero.css'
+import { Link } from "react-router-dom";
+import './hero.css'
+
 export default function Hero() {
     return (
         <main className="foreground">
-            <section className="content" aria-labelledby="heading">
+            <div className="content" aria-labelledby="heading">
                 <img src="/PFP.jpg" className="profile-picture" alt="Profile Picture" />
 
                 <div className="textContent">
@@ -27,10 +29,9 @@ export default function Hero() {
                             </a>
                         </div>
 
-                        <a id="projectsBtn" href="./Projects.html">View Projects</a>
-                    </div>
+                        <Link id="projectsBtn" to="/projects">View Projects</Link>                    </div>
                 </div>
-            </section>
+            </div>
         </main>
     )
 }
