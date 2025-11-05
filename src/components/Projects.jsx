@@ -42,10 +42,10 @@ const projects = [
 export const Projects = () => {
     return (
         <main className="projects-main">
-            <section className="introduction">
+            <div className="introduction">
                 <h1>Projects</h1>
                 <p>Here are some of my projects:</p>
-            </section>
+            </div>
 
             {projects.map(project => (
                 <div className="project-card" key={project.id}>
