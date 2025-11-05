@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import './styles/globals.css'
-import Header from './components/Header.jsx'
-import Hero from './components/Hero.jsx'
-import Footer from './components/Footer.jsx'
-import {Projects} from "./components/Projects.jsx";
+import './globals.css'
+import Header from './components/header/Header.jsx'
+import Hero from './components/hero/Hero.jsx'
+import Footer from './components/footer/Footer.jsx'
+import {Projects} from "./components/projectsPage/Projects.jsx";
 
 
 export default function App() {

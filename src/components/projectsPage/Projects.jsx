@@ -48,14 +48,14 @@ export const Projects = () => {
             </div>
 
             {projects.map(project => (
-                <div className="project-card" key={project.id}>
+                <article className="project-card" key={project.id}>
                     <img src={project.image} alt={project.title} />
                     <h2>{project.title}</h2>
                     <p>{project.description}</p>
                     <div className="tags">
                         {project.tags.map(tag => <h3 key={tag}>{tag}</h3>)}
                     </div>
-                </div>
+                </article>
             ))}
 
         </main>
