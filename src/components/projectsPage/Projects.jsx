@@ -1,6 +1,6 @@
 import './projects.css'
 
-const projects = [
+const projectsList = [
     {
         id: "p1",
         title: "Project 1",
@@ -47,7 +47,7 @@ export const Projects = () => {
                 <p>Here are some of my projects:</p>
             </div>
 
-            {projects.map(project => (
+            {projectsList.map(project => (
                 <article className="project-card" key={project.id}>
                     <img src={project.image} alt={project.title} />
                     <h2>{project.title}</h2>
